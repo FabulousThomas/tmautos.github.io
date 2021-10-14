@@ -88,6 +88,26 @@ section .container.slider-wrapper {
     display: flex;
 }
 
+.feature-vehicles .container .col-md-4 form .img-fluid {
+    width: 100%;
+    height: 210px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.feature-vehicles .container .shadow .card-body .d-flex {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.feature-vehicles .container .shadow .card-body .d-flex button {
+    /* width: 20px; */
+    padding: 7px 40px;
+}
+
+
+/* MEDIA QUERIES */
+
 @media screen and (max-width: 780px) {
     header .container p {
         width: 100%;
