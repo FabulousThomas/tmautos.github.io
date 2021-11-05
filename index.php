@@ -15,38 +15,7 @@
 </head>
 
 <body>
-    <!-- NAVIGATION SECTION -->
-    <nav class="navbar navbar-expand-lg py-0">
-        <div class="container py-2 px-0">
-            <a href="index.html" class="navbar-brand text-primary" style="font-size: xx-large"><i class="fas fa-car text-white"></i>TM Autos</a
-        >
-        <button
-          class="navbar-toggler border"
-          data-toggle="collapse"
-          data-target="#navbarCollapse"
-        >
-          <span><i class="fa fa-bars text-white"></i></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <!-- <div class="ml-auto"></div> -->
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item px-2">
-              <a href="buy.html" class="nav-link">Buy A Car</a>
-            </li>
-            <li class="nav-item px-2">
-                <a href="sell.html" class="nav-link">Sell A Car</a>
-            </li>
-            <li class="nav-item px-2">
-                <a href="about.html" class="nav-link">About Us</a>
-            </li>
-            <li class="nav-item px-2">
-                <a href="contact.html" class="nav-link">Contact</a>
-            </li>
-            </ul>
-        </div>
-        </div>
-    </nav>
+<?php require_once('navbar.php') ?>
 
     <header class="py-5">
         <div class="container pt-5">
@@ -63,9 +32,8 @@
         </p>
       </div>
       <div class="container pt-3">
-        <a href="buy.html" class="btn btn-primary border-left border-right"
-          >Buy Now &rarr;</a
-        >
+        <a href="buy.php" class="btn btn-primary border-left border-right"
+          >Buy Now &rarr;</a>
         <!-- <a href="" class="btn btn-outline-danger border-left border-right mx-4">Know more</a> -->
       </div>
     </header>
@@ -85,8 +53,8 @@
                   <h5 class="price text-primary">$250</h5>
                 </div>
                 <div class="d-flex">
-                  <a href="details.html" name="add" class="btn btn-primary mt-3">Buy Now</a>
-                  <a href="details.html" name="add" class="btn btn-success mt-3">Details</a>
+                  <a href="details.php" name="add" class="btn btn-primary mt-3">Buy Now</a>
+                  <a href="details.php" name="add" class="btn btn-success mt-3">Details</a>
                   <input type="hidden" name="product_id" value="$productid" />
                 </div>
               </div>
@@ -105,8 +73,8 @@
                   <h5 class="price text-primary">$250</h5>
                 </div>
                 <div class="d-flex">
-                  <a href="details.html" name="add" class="btn btn-primary mt-3">Buy Now</a>
-                  <a href="details.html" name="add" class="btn btn-success mt-3">Details</a>
+                  <a href="details.php" name="add" class="btn btn-primary mt-3">Buy Now</a>
+                  <a href="details.php" name="add" class="btn btn-success mt-3">Details</a>
                   <input type="hidden" name="product_id" value="$productid" />
                 </div>
               </div>
@@ -125,8 +93,8 @@
                   <h5 class="price text-primary">$250</h5>
                 </div>
                 <div class="d-flex">
-                  <a href="details.html" name="add" class="btn btn-primary mt-3">Buy Now</a>
-                  <a href="details.html" name="add" class="btn btn-success mt-3">Details</a>
+                  <a href="details.php" name="add" class="btn btn-primary mt-3">Buy Now</a>
+                  <a href="details.php" name="add" class="btn btn-success mt-3">Details</a>
                   <input type="hidden" name="product_id" value="$productid" />
                 </div>
               </div>
@@ -145,8 +113,8 @@
                   <h5 class="price text-primary">$250</h5>
                 </div>
                 <div class="d-flex">
-                  <a href="details.html" name="add" class="btn btn-primary mt-3">Buy Now</a>
-                  <a href="details.html" name="add" class="btn btn-success mt-3">Details</a>
+                  <a href="details.php" name="add" class="btn btn-primary mt-3">Buy Now</a>
+                  <a href="details.php" name="add" class="btn btn-success mt-3">Details</a>
                   <input type="hidden" name="product_id" value="$productid" />
                 </div>
               </div>
@@ -165,8 +133,8 @@
                   <h5 class="price text-primary">$250</h5>
                 </div>
                 <div class="d-flex">
-                  <a href="details.html" name="add" class="btn btn-primary mt-3">Buy Now</a>
-                  <a href="details.html" name="add" class="btn btn-success mt-3">Details</a>
+                  <a href="details.php" name="add" class="btn btn-primary mt-3">Buy Now</a>
+                  <a href="details.php" name="add" class="btn btn-success mt-3">Details</a>
                   <input type="hidden" name="product_id" value="$productid" />
                 </div>
               </div>
@@ -190,7 +158,7 @@
               </p>
               <p>
               On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-              <a href="buy.html" class="btn btn-primary btn-md">Search for Cars &rarr;</a>
+              <a href="buy.php" class="btn btn-primary btn-md">Search for Cars &rarr;</a>
           </div>
         </div>
       </div>
@@ -251,72 +219,7 @@
       </div>
     </section>
 
-    <footer class="footer py-5 mt-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <h4>Send us a message</h4>
-            <form action="" method="POST" id="form">
-              <div>
-                <input type="text" name="name" class="form-control" placeholder="Name">
-              </div>
-              <div>
-                <input type="email" name="email" class="form-control" placeholder="Email">
-              </div>
-              <div>
-                <input type="tel" name="tel" class="form-control" placeholder="Phone Number">
-              </div>
-              <div>
-                <textarea name="message" class="form-control" rows="5" placeholder="Your Message"></textarea>
-              </div>
-              <button class="btn btn-primary btn-md form-control">Send &rarr;</button>
-            </form>
-          </div>
-
-          <div class="col-md-3">
-            <h4>Information</h4>
-            <div id="links">
-              <a href="#">Buy a Car</a>
-              <a href="#">Sell a Car</a>
-              <a href="#">About Us</a>
-              <a href="#">Contact</a>
-              <a href="#">Terms and Condition</a>
-              <a href="#">Best Price Guarantee</a>
-              <a href="#">Privacy Policy</a>
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <h4>Have a Question?</h4>
-            <div #="info">
-              <i class="fas fa-home"></i> <p class="lead font-weight-bold">123 Fake Mountain View, Lagos, Nigeria, West Africa</p>
-
-              <i class="fas fa-phone"></i> <a href="tel:+2348060578499" class="text-white d-block mb-3">+234 806 057 8499</a>
-
-              <i class="fas fa-envelope"></i> <a href="mailto:" class="text-white d-block">tmautos@gmail.com</a>
-            </div>
-
-            <div class="pt-4">
-              <a href="#"><i class="fab fa-facebook"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-whatsapp"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-          </div>
-      </div>
-  </div>
-</div>
-
-<div class="copy pt-5">
-  <p class="text-center">
-      copyright &copy;
-      <script>
-          var currentYear = new Date().getFullYear();
-          document.write(currentYear);
-      </script>
-      <i class="fas fa-car text-white"></i>TM Autos | All rights reserved
-  </p>
-</div>
-    </footer>
+    <?php require_once('footer.php') ?>
 
   <!-- JS -->
   <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>

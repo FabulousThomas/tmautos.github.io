@@ -23,10 +23,10 @@
          <div class="col-md-3">
             <h4>Information</h4>
             <div id="links">
-               <a href="#">Buy a Car</a>
-               <a href="#">Sell a Car</a>
-               <a href="#">About Us</a>
-               <a href="#">Contact</a>
+               <a href="buy.php">Buy a Car</a>
+               <a href="sell.php">Sell a Car</a>
+               <a href="about.php">About Us</a>
+               <a href="contact.php">Contact</a>
                <a href="#">Terms and Condition</a>
                <a href="#">Best Price Guarantee</a>
                <a href="#">Privacy Policy</a>
@@ -35,7 +35,7 @@
 
          <div class="col-md-3">
             <h4>Have a Question?</h4>
-            <div #="info">
+            <div id="info">
                <i class="fas fa-home"></i>
                <p class="lead font-weight-bold">123 Fake Mountain View, Lagos, Nigeria, West Africa</p>
 

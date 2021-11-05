@@ -31,10 +31,14 @@ h1 {
     letter-spacing: 2px;
 }
 
+a {
+    cursor: pointer !important;
+}
+
 .fas:not(footer .fas,
 nav .fas,
 form .fas,
-.col-md-4.p-5 .fas) {
+.col-md-5 .fas) {
     font-size: 2rem;
     padding: 30px;
     border-radius: 50%;
@@ -182,7 +186,7 @@ section .container.slider-wrapper {
     margin: 1rem auto;
 }
 
-.sell-vehicles .container .row .form-container {
+.form-container {
     background-color: #000000;
     padding: 30px;
 }
@@ -192,6 +196,22 @@ section .container.slider-wrapper {
     font-size: 12px;
     text-transform: uppercase;
     font-weight: 600;
+}
+
+.contact #info>div {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px 30px;
+    margin: 10px auto;
+}
+
+.contact #info>div .fas {
+    font-size: 1.3rem;
+    padding: 10px 5px;
+}
+
+.contact #info>div a {
+    font-size: 18px;
 }
 
 .footer {

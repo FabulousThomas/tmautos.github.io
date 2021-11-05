@@ -1,0 +1,159 @@
+:root {
+    --primary-color: #e0a800;
+    --secondary-color: #dc3545;
+    --overlay-color: #182733d9;
+    --nav-color: #0b0c11;
+    --menu-speed: 0.75s;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Lato, sans-serif;
+    margin: 0;
+    transition: transform 0.3s ease;
+}
+
+body.show-nav {
+    transform: translateX(200px);
+}
+
+nav {
+    background-color: var(--nav-color);
+    border-right: 2px solid var(--overlay-color);
+    color: #fff;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 200px;
+    height: 100vh;
+    z-index: 8888;
+    transform: translateX(-100%);
+}
+
+nav .logo {
+    text-align: center;
+    padding: 15px 0;
+}
+
+nav .logo img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+nav ul {
+    padding: 0%;
+    list-style-type: none;
+    margin: 0%;
+}
+
+nav ul li {
+    border-bottom: 2px solid var(--overlay-color);
+}
+
+nav ul li:first-of-type {
+    border-top: 2px solid var(--overlay-color);
+}
+
+nav ul li a {
+    text-decoration: none !important;
+    color: #fff;
+    display: block;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: var(--overlay-color);
+    color: #fff;
+    padding-left: 20px;
+    transition: 0.3;
+}
+
+header {
+    background-color: var(--nav-color);
+    color: #fff;
+    font-size: 130%;
+    position: relative;
+    padding: 20px 15px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0%;
+}
+
+header p {
+    margin: 30px 0;
+}
+
+button,
+input[type='submit'] {
+    background-color: var(--overlay-color);
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    padding: 8px 12px;
+}
+
+button:focus {
+    outline: none;
+}
+
+.toggle {
+    background-color: var(--overlay-color);
+    position: absolute;
+    top: 15px;
+    left: 20px;
+}
+
+.cta-btn {
+    padding: 12px 30px;
+    /* font-size: 10px; */
+}
+
+.container .h-title:not(span) {
+    font-weight: 600;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.container .table-container table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.1rem;
+}
+
+.container .table-container table th,
+.container .table-container table td {
+    padding: 10px 2px;
+    text-align: center;
+    border-bottom: 1px solid gainsboro;
+}
+
+.container .table-container table td img {
+    width: 80px;
+    height: 60px;
+}
+
+.container .table-container table td form .delete {
+    border: none;
+    background: transparent;
+    color: rgb(248, 28, 28);
+    padding: 0%;
+}
+
+.container .table-container table td form .delete:hover {
+    text-decoration: underline;
+}
+
+.container .table-container table td .edit {
+    color: green;
+}
+
+.container .form-container div {
+    padding-bottom: 1rem;
+}

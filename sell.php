@@ -16,32 +16,7 @@
 
 <body>
     <!-- NAVIGATION SECTION -->
-    <nav class="navbar navbar-expand-lg py-0">
-        <div class="container py-2 px-0">
-            <a href="index.html" class="navbar-brand text-primary" style="font-size: xx-large"><i class="fas fa-car text-white"></i>TM Autos</a>
-            <button class="navbar-toggler border" data-toggle="collapse" data-target="#navbarCollapse">
-          <span><i class="fa fa-bars text-white"></i></span>
-        </button>
-
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <!-- <div class="ml-auto"></div> -->
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item px-2">
-                        <a href="buy.html" class="nav-link">Buy A Car</a>
-                    </li>
-                    <li class="nav-item px-2">
-                        <a href="sell.html" class="nav-link">Sell A Car</a>
-                    </li>
-                    <li class="nav-item px-2">
-                        <a href="about.html" class="nav-link">About Us</a>
-                    </li>
-                    <li class="nav-item px-2">
-                        <a href="contact" class="nav-link">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <?php require_once('navbar.php') ?>
 
     <header class="py-5">
         <div class="container pt-5">
@@ -121,73 +96,7 @@
         </div>
     </section>
 
-    <footer class="footer py-5 mt-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h4>Send us a message</h4>
-                    <form action="" method="POST" id="form">
-                        <div class="form-group">
-                            <input type="text" name="name" class="form-control" placeholder="Name">
-                        </div>
-                        <div class="form-group">
-                            <input type="email" name="email" class="form-control" placeholder="Email">
-                        </div>
-                        <div class="form-group">
-                            <input type="tel" name="tel" class="form-control" placeholder="Phone Number">
-                        </div>
-                        <div class="form-group">
-                            <textarea name="message" class="form-control" rows="5" placeholder="Your Message"></textarea>
-                        </div>
-                        <button class="btn btn-primary btn-md px-4">Send &rarr;</button>
-                    </form>
-                </div>
-
-                <div class="col-md-3">
-                    <h4>Information</h4>
-                    <div id="links">
-                        <a href="#">Buy a Car</a>
-                        <a href="#">Sell a Car</a>
-                        <a href="#">About Us</a>
-                        <a href="#">Contact</a>
-                        <a href="#">Terms and Condition</a>
-                        <a href="#">Best Price Guarantee</a>
-                        <a href="#">Privacy Policy</a>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <h4>Have a Question?</h4>
-                    <div #="info">
-                        <i class="fas fa-home"></i>
-                        <p class="lead font-weight-bold">123 Fake Mountain View, Lagos, Nigeria, West Africa</p>
-
-                        <i class="fas fa-phone"></i> <a href="tel:+2348060578499" class="text-white d-block mb-3">+234 806 057 8499</a>
-
-                        <i class="fas fa-envelope"></i> <a href="mailto:" class="text-white d-block">tmautos@gmail.com</a>
-                    </div>
-
-                    <div class="pt-4">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="copy pt-5">
-            <p class="text-center">
-                copyright 
-                &copy;<script>
-                    var currentYear = new Date().getFullYear();
-                    document.write(currentYear);
-                </script>
-                <i class="fas fa-car text-white"></i><span class="text-primary">TM Autos</span> | All rights reserved
-            </p>
-        </div>
-        </footer>
+    <?php require_once('footer.php') ?>
 
 
         <!-- JS -->
