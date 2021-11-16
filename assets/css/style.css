@@ -191,11 +191,15 @@ section .container.slider-wrapper {
     padding: 30px;
 }
 
+.request-form .form-group {
+    margin-bottom: 10px !important;
+}
+
 .request-form label.label {
     color: #fff;
-    font-size: 12px;
+    font-size: 10px;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .contact #info>div {

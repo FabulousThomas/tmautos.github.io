@@ -72,6 +72,10 @@ nav ul li a:hover {
     transition: 0.3;
 }
 
+.fa-1x {
+    font-size: 26px !important;
+}
+
 header {
     background-color: var(--nav-color);
     color: #fff;
@@ -156,4 +160,15 @@ button:focus {
 
 .container .form-container div {
     padding-bottom: 1rem;
+}
+
+
+/* .form-container .request-form .form-group {
+    padding-bottom: 0% !important;
+    margin-bottom: 0% !important;
+} */
+
+.container form .row .form-container .form-group label {
+    text-transform: uppercase !important;
+    font-size: 14px !important;
 }

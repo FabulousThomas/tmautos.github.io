@@ -1,3 +1,6 @@
+<?php require_once('./function/email.php') ?>
+<?php require_once('../tmautos.github.io/admin/function/logic.php') ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -45,15 +48,20 @@
       <h1 class="">Buy Cars</h1>
       <div class="container">
           <div class="row">
-        <div class="col-md-4 col-sm-6 my-3">
+            <?php foreach($selectCars as $sl) {?>
+            
+              <div class="col-md-4 col-sm-6 my-3">
           <form action="index.php" method="post" enctype="multipart/form-data">
-            <img src="assets/img/car_1.jpg" alt="Images" class="img-fluid" />
+            <img src="assets/img/<?php echo $sl['image'] ?>" alt="Images" class="img-fluid" />
             <div class="shadow">
               <div class="card-body px-4">
-                <h4 class="card-title">Mecedes Grand Sedan</h4>
                 <div class="d-flex">
-                  <h5 class="name text-secondary">Chevrolet</h5>
-                  <h5 class="price text-primary">$250</h5>
+                <h4 class="card-title"><?php echo $sl['car_name'] ?></h4>
+                  <h5 class="price text-primary">$<?php echo $sl['car_price'] ?></h5>
+                </div>
+                <div class="d-flex">
+                <h5 class="name text-secondary"><?php echo $sl['car_brand'] ?></h5>
+                <h5><?php echo $sl['car_color'] ?></h5>
                 </div>
                 <div class="d-flex">
                   <a href="details.html" name="add" class="btn btn-primary mt-3">Buy Now</a>
@@ -65,85 +73,7 @@
           </form>
         </div>
 
-        <div class="col-md-4 col-sm-6 my-3">
-          <form action="index.php" method="post" enctype="multipart/form-data">
-            <img src="assets/img/car_2.jpg" alt="Images" class="img-fluid" />
-            <div class="shadow">
-              <div class="card-body px-4">
-                <h4 class="card-title">Mecedes Grand Sedan</h4>
-                <div class="d-flex">
-                  <h5 class="name text-secondary">Chevrolet</h5>
-                  <h5 class="price text-primary">$250</h5>
-                </div>
-                <div class="d-flex">
-                  <a href="details.html" name="add" class="btn btn-primary mt-3">Buy Now</a>
-                  <a href="details.html" name="add" class="btn btn-success mt-3">Details</a>
-                  <input type="hidden" name="product_id" value="$productid" />
-                </div>
-              </div>
-            </div>
-          </form>
-        </div>
-
-        <div class="col-md-4 col-sm-6 my-3">
-          <form action="index.php" method="post" enctype="multipart/form-data">
-            <img src="assets/img/car_3.jpg" alt="Images" class="img-fluid" />
-            <div class="shadow">
-              <div class="card-body px-4">
-                <h4 class="card-title">Mecedes Grand Sedan</h4>
-                <div class="d-flex">
-                  <h5 class="name text-secondary">Chevrolet</h5>
-                  <h5 class="price text-primary">$250</h5>
-                </div>
-                <div class="d-flex">
-                  <a href="details.html" name="add" class="btn btn-primary mt-3">Buy Now</a>
-                  <a href="details.html" name="add" class="btn btn-success mt-3">Details</a>
-                  <input type="hidden" name="product_id" value="$productid" />
-                </div>
-              </div>
-            </div>
-          </form>
-        </div>
-
-        <div class="col-md-4 col-sm-6 my-3">
-          <form action="index.php" method="post" enctype="multipart/form-data">
-            <img src="assets/img/car_4.jpg" alt="Images" class="img-fluid" />
-            <div class="shadow">
-              <div class="card-body px-4">
-                <h4 class="card-title">Mecedes Grand Sedan</h4>
-                <div class="d-flex">
-                  <h5 class="name text-secondary">Chevrolet</h5>
-                  <h5 class="price text-primary">$250</h5>
-                </div>
-                <div class="d-flex">
-                  <a href="details.html" name="add" class="btn btn-primary mt-3">Buy Now</a>
-                  <a href="details.html" name="add" class="btn btn-success mt-3">Details</a>
-                  <input type="hidden" name="product_id" value="$productid" />
-                </div>
-              </div>
-            </div>
-          </form>
-        </div>
-
-        <div class="col-md-4 col-sm-6 my-3">
-          <form action="index.php" method="post" enctype="multipart/form-data">
-            <img src="assets/img/car_5.jpg" alt="Images" class="img-fluid" />
-            <div class="shadow">
-              <div class="card-body px-4">
-                <h4 class="card-title">Mecedes Grand Sedan</h4>
-                <div class="d-flex">
-                  <h5 class="name text-secondary">Chevrolet</h5>
-                  <h5 class="price text-primary">$250</h5>
-                </div>
-                <div class="d-flex">
-                  <a href="details.html" name="add" class="btn btn-primary mt-3">Buy Now</a>
-                  <a href="details.html" name="add" class="btn btn-success mt-3">Details</a>
-                  <input type="hidden" name="product_id" value="$productid" />
-                </div>
-              </div>
-            </div>
-          </form>
-        </div>
+            <?php } ?>
         </div>
       </div>
     </section>

@@ -3,7 +3,7 @@
       <div class="row">
          <div class="col-md-4">
             <h4>Send us a message</h4>
-            <form action="" method="POST" id="form">
+            <form action="" method="POST" id="form" enctype="multipart/form-data">
                <div class="form-group">
                   <input type="text" name="name" class="form-control" placeholder="Name">
                </div>
@@ -14,9 +14,12 @@
                   <input type="tel" name="tel" class="form-control" placeholder="Phone Number">
                </div>
                <div class="form-group">
+                  <input type="text" name="subject" class="form-control" placeholder="Subject">
+               </div>
+               <div class="form-group">
                   <textarea name="message" class="form-control" rows="5" placeholder="Your Message"></textarea>
                </div>
-               <button class="btn btn-primary btn-md px-4">Send &rarr;</button>
+               <button class="btn btn-primary btn-md px-4" name="send_msg">Send &rarr;</button>
             </form>
          </div>
 

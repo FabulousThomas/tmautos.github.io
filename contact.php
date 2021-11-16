@@ -1,3 +1,5 @@
+<?php require_once('./function/email.php') ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -78,7 +80,7 @@
                                 <label for="" class="label">message</label>
                                 <textarea name="message" class="form-control" rows="5" placeholder="Your Message"></textarea>
                             </div>
-                            <button class="btn btn-primary btn-md form-control">
+                            <button class="btn btn-primary btn-md form-control" name="send-msg">
                          Send Message &rarr;
                        </button>
 

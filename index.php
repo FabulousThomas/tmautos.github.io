@@ -1,3 +1,7 @@
+<?php require_once("./function/config.php") ?>
+<?php require_once('./function/email.php') ?>
+<?php require_once('../tmautos.github.io/admin/function/logic.php') ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -42,105 +46,30 @@
       <h6 class="">what we offer</h6>
       <h1 class="">Featured Cars</h1>
       <div class="container slider-wrapper">
-        <div class="col-md-4 col-sm-6 my-3">
-          <form action="index.php" method="post" enctype="multipart/form-data">
-            <img src="assets/img/car_1.jpg" alt="Images" class="img-fluid" />
-            <div class="shadow">
-              <div class="card-body px-4">
-                <h4 class="card-title">Mecedes Grand Sedan</h4>
-                <div class="d-flex">
-                  <h5 class="name text-secondary">Chevrolet</h5>
-                  <h5 class="price text-primary">$250</h5>
-                </div>
-                <div class="d-flex">
-                  <a href="details.php" name="add" class="btn btn-primary mt-3">Buy Now</a>
-                  <a href="details.php" name="add" class="btn btn-success mt-3">Details</a>
-                  <input type="hidden" name="product_id" value="$productid" />
-                </div>
+      <?php foreach($selectCars as $sl) {?>
+      <div class="col-md-4 col-sm-6 my-3">
+        <form action="index.php" method="post" enctype="multipart/form-data">
+          <img src="assets/img/<?php echo $sl['image'] ?>" alt="Images" class="img-fluid" />
+          <div class="shadow">
+            <div class="card-body px-4">
+              <div class="d-flex">
+              <h4 class="card-title m-0"><?php echo $sl['car_name'] ?></h4>
+                <h5 class="price text-primary m-0">$<?php echo $sl['car_price'] ?></h5>
+              </div>
+              <div class="d-flex">
+              <h5 class="name text-secondary m-0"><?php echo $sl['car_brand'] ?></h5>
+              <h5 class="m-0"><?php echo $sl['car_color'] ?></h5>
+              </div>
+              <div class="d-flex">
+                <a href="details.html" name="add" class="btn btn-primary mt-1">Buy Now</a>
+                <a href="details.html" name="add" class="btn btn-success mt-1">Details</a>
+                <input type="hidden" name="product_id" value="$productid" />
               </div>
             </div>
-          </form>
-        </div>
-
-        <div class="col-md-4 col-sm-6 my-3">
-          <form action="index.php" method="post" enctype="multipart/form-data">
-            <img src="assets/img/car_2.jpg" alt="Images" class="img-fluid" />
-            <div class="shadow">
-              <div class="card-body px-4">
-                <h4 class="card-title">Mecedes Grand Sedan</h4>
-                <div class="d-flex">
-                  <h5 class="name text-secondary">Chevrolet</h5>
-                  <h5 class="price text-primary">$250</h5>
-                </div>
-                <div class="d-flex">
-                  <a href="details.php" name="add" class="btn btn-primary mt-3">Buy Now</a>
-                  <a href="details.php" name="add" class="btn btn-success mt-3">Details</a>
-                  <input type="hidden" name="product_id" value="$productid" />
-                </div>
-              </div>
-            </div>
-          </form>
-        </div>
-
-        <div class="col-md-4 col-sm-6 my-3">
-          <form action="index.php" method="post" enctype="multipart/form-data">
-            <img src="assets/img/car_3.jpg" alt="Images" class="img-fluid" />
-            <div class="shadow">
-              <div class="card-body px-4">
-                <h4 class="card-title">Mecedes Grand Sedan</h4>
-                <div class="d-flex">
-                  <h5 class="name text-secondary">Chevrolet</h5>
-                  <h5 class="price text-primary">$250</h5>
-                </div>
-                <div class="d-flex">
-                  <a href="details.php" name="add" class="btn btn-primary mt-3">Buy Now</a>
-                  <a href="details.php" name="add" class="btn btn-success mt-3">Details</a>
-                  <input type="hidden" name="product_id" value="$productid" />
-                </div>
-              </div>
-            </div>
-          </form>
-        </div>
-
-        <div class="col-md-4 col-sm-6 my-3">
-          <form action="index.php" method="post" enctype="multipart/form-data">
-            <img src="assets/img/car_4.jpg" alt="Images" class="img-fluid" />
-            <div class="shadow">
-              <div class="card-body px-4">
-                <h4 class="card-title">Mecedes Grand Sedan</h4>
-                <div class="d-flex">
-                  <h5 class="name text-secondary">Chevrolet</h5>
-                  <h5 class="price text-primary">$250</h5>
-                </div>
-                <div class="d-flex">
-                  <a href="details.php" name="add" class="btn btn-primary mt-3">Buy Now</a>
-                  <a href="details.php" name="add" class="btn btn-success mt-3">Details</a>
-                  <input type="hidden" name="product_id" value="$productid" />
-                </div>
-              </div>
-            </div>
-          </form>
-        </div>
-
-        <div class="col-md-4 col-sm-6 my-3">
-          <form action="index.php" method="post" enctype="multipart/form-data">
-            <img src="assets/img/car_5.jpg" alt="Images" class="img-fluid" />
-            <div class="shadow">
-              <div class="card-body px-4">
-                <h4 class="card-title">Mecedes Grand Sedan</h4>
-                <div class="d-flex">
-                  <h5 class="name text-secondary">Chevrolet</h5>
-                  <h5 class="price text-primary">$250</h5>
-                </div>
-                <div class="d-flex">
-                  <a href="details.php" name="add" class="btn btn-primary mt-3">Buy Now</a>
-                  <a href="details.php" name="add" class="btn btn-success mt-3">Details</a>
-                  <input type="hidden" name="product_id" value="$productid" />
-                </div>
-              </div>
-            </div>
-          </form>
-        </div>
+          </div>
+        </form>
+      </div>
+          <?php } ?>
       </div>
     </section>
 
@@ -202,7 +131,7 @@
         <div class="row justify-content-center align-items-center">
           
           <div class="col-md-5 text-center">
-              <img src="assets/img/car_1.jpg" alt="" class="img-fluid">
+              <img src="assets/img/tm_ceo.JPG" alt="" class="img-fluid">
             <p class="text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum odit accusantium sint mollitia. Aperiam veniam labore tenetur aliquid quaerat perspiciatis?</p>
             <h5>Ebhodaghe Godwin Samson</h5>
             <h5 class="text-primary">CEO</h5>

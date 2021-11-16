@@ -1,3 +1,5 @@
+<?php require_once('./function/email.php') ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
